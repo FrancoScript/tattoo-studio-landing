@@ -4,7 +4,7 @@ const lightbox = document.getElementById("lightbox");
 
 const lightboxImg = document.getElementById("lightbox-img");
 
-/* ABRIR */
+//**Open */
 images.forEach((img) => {
     img.addEventListener("click", (e) => {
         e.stopImmediatePropagation()
@@ -14,7 +14,7 @@ images.forEach((img) => {
     });
 });
 
-/* CERRAR */
+//**Close */
 lightbox.addEventListener("click", () => {
     lightbox.classList.remove("active");
 });
@@ -32,8 +32,9 @@ closeBtn.addEventListener("click", () => {
 
 
 
-const hamMenu = document.querySelector('.ham-menu');
+//* Hamburger Menu
 
+const hamMenu = document.querySelector('.ham-menu');
 const offScreenMenu = document.querySelector('.off-screen-menu');
 
 
